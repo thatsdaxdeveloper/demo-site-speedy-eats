@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speedy Eats</title>
-    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-white px-12 py-8">
+  <body class="bg-white px-4 py-8 lg:px-12">
     <header class="flex justify-between items-center">
       <a href="#" class="flex items-center ">
-        <img src="../assets/images/logo-speedy-eats.png" alt="Speedy Eats Logo" class="w-16">
-        <span class="text-xl font-bold text-red-600">Speedy Eats</span>
+        <img src="../assets/images/logo-speedy-eats.png" alt="Speedy Eats Logo" class="w-12 lg:w-16">
+        <span class="text-md lg:text-xl font-bold text-red-600">Speedy Eats</span>
       </a>
 
       <nav aria-label="Navigation principale" class="hidden lg:block">
@@ -29,58 +29,13 @@
       </button>
 
       <button type="button"
-              class="bg-black text-white px-4 py-2 rounded-3xl hover:bg-gray-700 cursor-pointer flex items-center gap-2 lg:hidden">
+              class="bg-black text-white text-sm lg:text-xl p-2 rounded-3xl hover:bg-gray-700 cursor-pointer flex items-center gap-2 lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="size-6">
+                class="w-4">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
         Menu
       </button>
     </header>
-
-    <main>
-      <section class="mt-10">
-        <article
-                class="flex gap-10 items-center w-full h-100 bg-linear-to-r from-amber-200 to-yellow-500 rounded-3xl overflow-hidden">
-          <img src="../assets/images/image-coursier.png" alt="Coursier" class="w-auto object-cover">
-          <div class="w-lg">
-            <h2 class="text-6xl">Delicious Food, <br> Delivered to Your <br> Doorstep</h2>
-            <p class="text-lg mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              Ut wisi enim</p>
-            <button type="button"
-                  class="bg-red-600 text-white px-4 py-2 rounded-3xl hover:bg-red-400 cursor-pointer mt-4">Explore
-            Restaurant
-          </button>
-          </div>
-        </article>
-
-        <article class="flex gap-10 items-center w-full mt-10">
-          <div class="flex items-center justify-between bg-amber-200 w-full h-40 rounded-3xl p-8">
-            <div class="w-1/2">
-              <h3 class="text-2xl">Select a <br> Restaurant</h3>
-              <p class="text-sm">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-            </div>
-            <img src="../assets/images/fork-and-spoon-meal-2-svgrepo-com.svg" alt="Fork and Spoon"
-                    class="w-24 object-contain">
-          </div>
-          <div class="flex items-center justify-between bg-orange-300 w-full h-40 rounded-3xl p-8">
-            <div class="w-1/2">
-              <h3 class="text-2xl">Find Tasty <br> Choices</h3>
-              <p class="text-sm">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-            </div>
-            <img src="../assets/images/card-stack-svgrepo-com.svg" alt="Fork and Spoon"
-                    class="w-24 object-contain">
-          </div>
-          <div class="flex items-center justify-between bg-pink-300 w-full h-40 rounded-3xl p-8">
-            <div class="w-1/2">
-              <h3 class="text-2xl">Wait for <br> Delivery</h3>
-              <p class="text-sm">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-            </div>
-            <img src="../assets/images/delivery-solid-svgrepo-com.svg" alt="Fork and Spoon"
-                    class="w-24 object-contain">
-          </div>
-        </article>
-      </section>
-    </main>
   </body>
 </html>
